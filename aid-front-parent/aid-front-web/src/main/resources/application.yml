@@ -1,0 +1,21 @@
+server:
+  port: 8091
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: aid-front-web
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  messages:
+    basename: i18n/exceptions,message
+    encoding: UTF-8
+
+debug: true
+
+
+

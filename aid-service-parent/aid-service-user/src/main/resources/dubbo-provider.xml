@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- dubbo注解扫描包名 -->
+    <!--<dubbo:annotation package="tech.yiyehu.aid.impl"/>-->
+
+    <dubbo:protocol name="dubbo"/>
+
+    <dubbo:service interface="tech.yiyehu.aid.service.TestSpringService"
+                   ref="testSpringService" protocol="dubbo" timeout="5000"/>
+
+    <dubbo:service interface="tech.yiyehu.aid.service.TestService"
+                   ref="testService" protocol="dubbo" timeout="5000"/>
+
+</beans>

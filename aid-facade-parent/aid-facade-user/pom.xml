@@ -3,28 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>aid-service-parent</artifactId>
+        <artifactId>aid-facade-parent</artifactId>
         <groupId>tech.yiyehu</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>aid-service-common</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>aid-facade-user</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>tech.yiyehu</groupId>
-            <artifactId>aid-common</artifactId>
+            <artifactId>aid-facade-common</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-logging</artifactId>
-        </dependency>
     </dependencies>
+
 </project>

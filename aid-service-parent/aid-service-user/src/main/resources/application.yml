@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: aid-service-user
+server:
+  port: 8092
+
+
+
+
+
+
+
+

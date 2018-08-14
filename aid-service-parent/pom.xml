@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>aid-service-common</module>
+        <module>aid-service-common-redis</module>
+        <module>aid-service-user</module>
     </modules>
-
 </project>
