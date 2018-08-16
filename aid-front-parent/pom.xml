@@ -12,7 +12,6 @@
     <artifactId>aid-front-parent</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>aid-front-common</module>
         <module>aid-front-web</module>
     </modules>
 

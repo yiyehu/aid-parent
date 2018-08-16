@@ -1,7 +1,7 @@
 # aid-parent
 
 #### 项目介绍
-
+一个使用dubbo的分布式项目，逐渐丰满中
 
 
 #### 软件架构
@@ -34,7 +34,7 @@ aid-parent
 │    ├─aid-front-common  公共
 │    │    
 │    │ 
-│    └─aid-front-user  用户前端
+│    └─aid-front-web  用户前端
 │
 ```
 
@@ -42,13 +42,15 @@ aid-parent
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. zookeeper-3.5.3-beta
+2. aid-parent maven项目导入
+
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. 目前只是一个dubbo的小的demo，所以只要打开zookeeper，
+2. 运行provider：aid-service-user
+3. 运行consumer：aid-front-web
+
+
 

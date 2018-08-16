@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>aid-common-parent</module>
+        <module>framework-parent</module>
         <module>aid-facade-parent</module>
         <module>aid-service-parent</module>
         <module>aid-front-parent</module>

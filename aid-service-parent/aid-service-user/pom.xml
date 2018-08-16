@@ -39,12 +39,18 @@
     <dependencies>
         <dependency>
             <groupId>tech.yiyehu</groupId>
-            <artifactId>aid-facade-user</artifactId>
+            <artifactId>framework-common</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>tech.yiyehu</groupId>
-            <artifactId>aid-service-common</artifactId>
+            <artifactId>framework-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>tech.yiyehu</groupId>
+            <artifactId>aid-facade-user</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

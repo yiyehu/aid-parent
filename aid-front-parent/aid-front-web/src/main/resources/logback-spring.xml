@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
 
-    <property name="APP_NAME" value="system-provider"/>
+    <property name="APP_NAME" value="aid-front-web"/>
     <contextName>${APP_NAME}</contextName>
 
     <!-- 控制台彩色打印 -->
@@ -27,7 +27,7 @@
         </encoder>
     </appender>
 
-    <logger name="tech.yiyehu.aid" level="DEBUG"/>
+    <logger name="tech.yiyehu.aid" level="INFO"/>
     <logger name="com.alibaba.dubbo" level="DEBUG"/>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">

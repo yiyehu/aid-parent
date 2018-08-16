@@ -9,9 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>aid-service-parent</artifactId>
+    <artifactId>framework-parent</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>aid-service-user</module>
+        <module>framework-common</module>
+        <module>framework-service</module>
+        <module>framework-front</module>
+        <module>framework-redis</module>
     </modules>
+
 </project>

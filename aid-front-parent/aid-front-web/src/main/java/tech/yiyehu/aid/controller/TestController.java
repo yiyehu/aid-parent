@@ -3,11 +3,14 @@ package tech.yiyehu.aid.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.httpclient.HttpStatus;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.yiyehu.aid.common.utils.Result;
 import tech.yiyehu.aid.service.TestService;
+import tech.yiyehu.framework.front.utils.Result;
 
 /**
  * @author yiyehu
@@ -19,11 +22,14 @@ import tech.yiyehu.aid.service.TestService;
 public class TestController extends BaseController {
 
     @Reference
-    TestService testService;
+    private TestService testService;
+
+    @Autowired
+    private MessageSource messageSource;
 
     @ApiOperation("测试方法")
     @GetMapping("test")
     public Result test() {
-        return Result.getPrototypeInstance().put("msg",testService.test());
+        return Result.getPrototypeInstance().create("00000", HttpStatus.SC_OK);
     }
 }

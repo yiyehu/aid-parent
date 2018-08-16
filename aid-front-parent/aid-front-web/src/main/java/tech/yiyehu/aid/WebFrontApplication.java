@@ -3,10 +3,8 @@ package tech.yiyehu.aid;
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.ImportResource;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
-import tech.yiyehu.aid.common.annotation.EnableSwagger2DocketConfiguration;
+import tech.yiyehu.framework.front.annotation.EnableResultReturnAspectConfiguration;
+import tech.yiyehu.framework.front.annotation.EnableSwagger2DocketConfiguration;
 
 /**
  * @author yiyehu
@@ -14,6 +12,7 @@ import tech.yiyehu.aid.common.annotation.EnableSwagger2DocketConfiguration;
  */
 @SpringBootApplication
 @EnableSwagger2DocketConfiguration
+@EnableResultReturnAspectConfiguration
 @DubboComponentScan("tech.yiyehu.aid.controller")
 public class WebFrontApplication {
 
