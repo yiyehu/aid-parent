@@ -4,6 +4,7 @@ import com.google.common.base.Predicates;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -28,7 +29,7 @@ public class Swagger2DocketConfig {
                 .groupName(swagger2Docket.getGroupName())
                 .apiInfo(apiInfo())
                 .select()
-                .apis(Predicates.or(RequestHandlerSelectors.basePackage(swagger2Docket.getResourcePackage())))
+                .apis(RequestHandlerSelectors.basePackage(swagger2Docket.getResourcePackage()))
                 .paths(PathSelectors.any())
                 .build();
     }

@@ -18,16 +18,12 @@ import tech.yiyehu.framework.front.utils.Result;
  * @version 创建时间：2018/8/16 11:01
  */
 @Aspect
-@Configuration
 public class ResultReturnAspect {
 
     @Autowired
     private MessageSource messageSource;
 
     private Logger logger = LoggerFactory.getLogger(getClass());
-    //是否开启redis缓存  true开启   false关闭
-//    @Value("${spring.redis.open: false}")
-//    private boolean open;
 
     @Around("execution(tech.yiyehu.framework.front.utils.Result *.*(..))")
     public Object around(ProceedingJoinPoint point) throws Throwable {

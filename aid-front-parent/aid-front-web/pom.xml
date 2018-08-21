@@ -13,12 +13,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>tech.yiyehu</groupId>
+            <groupId>tech.yiyehu.framework</groupId>
             <artifactId>framework-common</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>tech.yiyehu</groupId>
+            <groupId>tech.yiyehu.framework</groupId>
             <artifactId>framework-front</artifactId>
             <version>${project.version}</version>
         </dependency>

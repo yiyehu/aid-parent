@@ -20,7 +20,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @author yiyehu
  * @version 创建时间：2018/8/7 10:05
  */
-@Configuration
 @ConditionalOnResource(resources = {"classpath:swagger.properties"})
 @PropertySource(value = {"classpath:swagger.properties"},encoding = "UTF-8")
 @ConfigurationProperties(prefix = "swagger.docket")

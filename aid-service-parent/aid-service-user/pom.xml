@@ -38,13 +38,18 @@
 
     <dependencies>
         <dependency>
-            <groupId>tech.yiyehu</groupId>
+            <groupId>tech.yiyehu.framework</groupId>
             <artifactId>framework-common</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>tech.yiyehu</groupId>
+            <groupId>tech.yiyehu.framework</groupId>
             <artifactId>framework-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>tech.yiyehu.framework</groupId>
+            <artifactId>framework-redis</artifactId>
             <version>${project.version}</version>
         </dependency>
 
