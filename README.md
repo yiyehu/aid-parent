@@ -10,7 +10,13 @@
 aid-parent
 ├─aid-common-parent    
 │    │ 
-│    └─aid-common  公共 
+│    ├─ framework-common  
+│    │  
+│    ├─ framework-front  
+│    │  
+│    ├─ framework-redis
+│    │  
+│    └─ framework-service
 │ 
 │ 
 ├─aid-facade-parent     接口
