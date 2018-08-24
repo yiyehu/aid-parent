@@ -15,7 +15,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
 @Documented
-@Import({Swagger2Docket.class,Swagger2DocketConfig.class})
+@Import({Swagger2Docket.class,Swagger2DocketConfig.class,SwaggerWebMvcConfig.class})
 @EnableSwagger2
 public @interface EnableSwagger2Docket {
 

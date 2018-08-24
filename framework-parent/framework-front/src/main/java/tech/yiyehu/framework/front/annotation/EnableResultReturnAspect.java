@@ -3,6 +3,7 @@ package tech.yiyehu.framework.front.annotation;
 import org.springframework.context.annotation.Import;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import tech.yiyehu.framework.front.aspect.ResultReturnAspect;
+import tech.yiyehu.framework.front.config.ResultReturnWebMvcConfig;
 
 import java.lang.annotation.*;
 
@@ -13,7 +14,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
 @Documented
-@Import({ResultReturnAspect.class})
+@Import({ResultReturnWebMvcConfig.class})
 @EnableSwagger2
 public @interface EnableResultReturnAspect {
 

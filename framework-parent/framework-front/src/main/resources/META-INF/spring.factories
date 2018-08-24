@@ -1,3 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-tech.yiyehu.framework.front.config.Swagger2DocketAutoConfiguration,\
-tech.yiyehu.framework.front.config.ResultReturnAspectAutoConfiguration
+tech.yiyehu.framework.front.WebFrontAutoConfiguration

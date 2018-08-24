@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  * @author yiyehu
  * @version 创建时间：2018/8/10 16:38
  */
-@Deprecated
+@Configuration
 public class SwaggerWebMvcConfig extends WebMvcConfigurationSupport {
     private Logger logger = LoggerFactory.getLogger(SwaggerWebMvcConfig.class);
     @Override
